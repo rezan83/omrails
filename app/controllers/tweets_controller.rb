@@ -20,7 +20,7 @@ class TweetsController < InheritedResources::Base
     if @tweet.update(tweet_params)
       redirect_to @tweet, notice: "tweet updated"
     else
-      render :edite
+      render :edit
     end
   end
   def destroy
